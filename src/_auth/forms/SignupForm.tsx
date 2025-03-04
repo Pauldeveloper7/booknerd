@@ -41,7 +41,6 @@ const SignupForm = () => {
       email :values.email,
       password: values.password
     })
-    console.log("Waheguru" , session)
     if(!session){
       return toast("Sign in failed . Please try again ");
     }
@@ -57,7 +56,7 @@ const SignupForm = () => {
   return (
 <Form {...form}>
     <div className="sm:w-420 flex-center flex-col">
-      <img src="/assets/images/logo.svg" alt="logo"  />
+      <img src="/assets/images/logo.png" alt="logo"  width={"130px"} height={"130px"} />
       <h2 className="h3-bold md:h2-bold pt-5 sm:pt-12"> Create a new account</h2>
       <p className=" text-light-3 small-medium  md:base-regular mt-2">To use booknerd , Kindly enter your account details </p>
       <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-5  w-full  mt-4">
@@ -70,7 +69,6 @@ const SignupForm = () => {
               <FormControl>
                 <Input type="text"  className="shad-input" {...field} />
               </FormControl>
-              
               <FormMessage />
             </FormItem>
           )}
