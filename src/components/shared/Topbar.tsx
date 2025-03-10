@@ -18,8 +18,9 @@ const Topbar = () => {
     <section className="topbar">
       <div className="flex-between py-4 px-5">
         <Link to="/hello" className="flex gap-3 items-center">
-        <img src="/assets/images/logo.png" alt="logo bhai"  width={"130px"} height={"130px"} />
-
+        <img src="/assets/images/logo.png" alt="logo bhai"  width={50} height={50}
+          className="rounded-full"
+        />
         </Link>
 
         <div className="flex gap-4">
